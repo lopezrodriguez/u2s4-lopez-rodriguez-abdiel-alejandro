@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 class Servicio(models.Model):
     # propietario: relaciona este servicio con el usuario dueño
     # on_delete=CASCADE: si se borra ese usuario, se borran también sus servicios
+    disponible = models.BooleanField(default=True) 
     propietario = models.ForeignKey(
     User, on_delete=models.CASCADE, null=True, blank=True
 )
