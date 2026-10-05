@@ -2,9 +2,12 @@
 venv/
 # .env: el archivo con tus contraseñas reales, nunca debe llegar a GitHub
 .env
-
+**/.env
 .env.example
+**/.env.example
 # __pycache__/: archivos compilados que Python genera solo, no son código fuente
 __pycache__/
+*.pyc 
+db.sqlite3 
 # staticfiles/: NUEVO — carpeta que genera collectstatic; Render la crea de nuevo en cada deploy
 staticfiles/
